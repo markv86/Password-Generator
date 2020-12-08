@@ -1,25 +1,37 @@
 // Assignment Code
 // var generateBtn = document.querySelector("#generate");
-// var upperCase = (ABCDEFGHIFJKLMNOPQRSTUVWXYZ)
-// var lowerCase
+// var upperSelection = (ABCDEFGHIFJKLMNOPQRSTUVWXYZ)
+// var lowerSelection
 // var numbers
-// var specialCharacters
+// var specialSelection
 
 
+//   PROMPTS    
 
 function clickme() {
   alert("Are you ready to generate a new password?");
   alert("ok then");
   alert("Let do this!!!");
-  var howmany = prompt("How many digits will this undefeatable password contain? (8-128)");
-   console.log (howmany);
-     if (howmany <= 8 || howmany >= 128) {
+  
+    var howmany = prompt("How many digits will this undefeatable password contain? (8-128)");
+    console.log (howmany);
+    if (howmany <= 8 || howmany >= 128) {
       alert ('Please try again');
       prompt('You did not follow directions! Please choose a number between 8 - 128! ');
-     }
-     else {
-        prompt('Would you like to use UPPER case letter?');
-      }
+    }
+    var upperCase = prompt('Would you like to use UPPER case letters"');
+    console.log (upperCase);
+    
+    var lowerCase = prompt('Would you like to use lower case letters?');  
+    console.log (lowerCase);
+
+    var specialCharacters = prompt('Would you like to use $P3C!AL Characters?')
+    console.log (specialCharacters);
+
+//     END OF PROMPTS
+
+  
+    //at least one must be selected. redirect to prompts again if nothing is selected.
 }   
 
   

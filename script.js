@@ -7,7 +7,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
@@ -23,7 +22,7 @@ function generatePassword() {
     var howmany = prompt("How many digits will this undefeatable password contain? (8-128)");
     console.log(howmany)
    
-    if (howmany <= 8 || howmany >= 128) {
+    if (howmany <= 8 || howmany >= 129) {
       alert ('Please try again');
       prompt('You did not follow directions! Please choose a number between 8 - 128! ');
     }
@@ -82,4 +81,6 @@ function generatePassword() {
         randomstring += chosenCharacter[password]
         console.log(randomstring)
       }
+
+  return randomstring
 }

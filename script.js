@@ -37,29 +37,39 @@ function clickme() {
     var lowerSelection = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     var numbers = ['0','1','2','3','4','5','6','7','8','9']
     var specialSelection = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
-    var chosenCharacter = []
-//     END OF PROMPTS
+
+    //     END OF PROMPTS
   
-//     Push options to an array
+    //     Push options to an array
+    var chosenCharacter = []
 
+    //    If conditions for user input to be used for randomizer
 
-  if(upperCase){
-    console.log(upperSelection)
-  }
-  if(lowerCase){
-    console.log(lowerSelection)
-  }
-  if(integers){
-    console.log(numbers)
-  }
-  if(specialCharacters){
-    console.log(specialSelection)
-  }
+    if(upperCase){
+    //  console.log(upperSelection)
+    var chosenCharacter = chosenCharacter.concat(upperSelection);
+    console.log(chosenCharacter)
+    }
+    if(lowerCase){
+      // console.log(lowerSelection)
+      var chosenCharacter = chosenCharacter.concat(lowerSelection);
+    console.log(chosenCharacter)
+    }
+    if(integers){
+      // console.log(numbers)
+      var chosenCharacter = chosenCharacter.concat(numbers);
+    console.log(chosenCharacter)
+    }
+    if(specialCharacters){
+      // console.log(specialSelection)
+      var chosenCharacter = chosenCharacter.concat(specialSelection);
+    console.log(chosenCharacter)
+    }
 
 //  concat final string
 
-var passwordGeneratephrase = upperSelection.concat(lowerSelection, numbers, specialSelection)
-  console.log(passwordGeneratephrase)
+// var passwordGeneratephrase = upperSelection.concat(lowerSelection, numbers, specialSelection)
+//   console.log(passwordGeneratephrase)
 
 
 

@@ -13,3 +13,10 @@ I was able to explore HTML, CSS and Javascript in this assignment. The truth is 
 </p>
 <hr>
 <p>
+
+## Instructions
+
+1. Click Generate to being
+2. Click through prompts.
+3. Enter how many characters you would like this password to be.
+4. Okay = yes, Cancel = No

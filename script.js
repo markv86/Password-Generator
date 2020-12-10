@@ -68,7 +68,7 @@ function clickme() {
     var randomstring = ''
       for (var i=0; i<howmany; i++) {
         var rnum = Math.floor(Math.random() * chosenCharacter.length);
-        randomstring += howmany.substring(rnum,rnum+1);
+        randomstring += chosenCharacter[rnum]
         console.log(randomstring)
 
       }

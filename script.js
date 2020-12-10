@@ -3,9 +3,6 @@
 
 // Choices for password generation
 
-
-
-
 //   PROMPTS    
 
 function clickme() {
@@ -66,10 +63,16 @@ function clickme() {
     console.log(chosenCharacter)
     }
 
-//  concat final string
+    //  Random Password String
 
-// var passwordGeneratephrase = upperSelection.concat(lowerSelection, numbers, specialSelection)
-//   console.log(passwordGeneratephrase)
+    var randomstring = ''
+      for (var i=0; i<howmany; i++) {
+        var rnum = Math.floor(Math.random() * chosenCharacter.length);
+        randomstring += howmany.substring(rnum,rnum+1);
+        console.log(randomstring)
+
+      }
+
 
 
 

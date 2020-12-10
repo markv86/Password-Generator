@@ -83,11 +83,3 @@ function generatePassword() {
         console.log(randomstring)
       }
 }
-    // //  write password to id=password
-    //   function clickme() {
-    //     var password = generatePassword();
-    //     var passwordText = document.querySelector("#password");
-
-    //     passwordText.value = password;
-    //   }
-

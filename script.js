@@ -1,11 +1,22 @@
 // Assignment Code
-// var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 
-// Choices for password generation
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+// console.log(generateBtn);
 
 //   PROMPTS    
 
-function clickme() {
+function generatePassword() {
   alert("Are you ready to generate a new password?");
   alert("Let do this!!!");
   
@@ -67,33 +78,16 @@ function clickme() {
 
     var randomstring = ''
       for (var i=0; i<howmany; i++) {
-        var rnum = Math.floor(Math.random() * chosenCharacter.length);
-        randomstring += chosenCharacter[rnum]
+        var password = Math.floor(Math.random() * chosenCharacter.length);
+        randomstring += chosenCharacter[password]
         console.log(randomstring)
-
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
+    // //  write password to id=password
+    //   function clickme() {
+    //     var password = generatePassword();
+    //     var passwordText = document.querySelector("#password");
 
-//   passwordText.value = password;
+    //     passwordText.value = password;
+    //   }
 
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
